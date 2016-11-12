@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="profecoApp">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
@@ -9,44 +9,45 @@
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="bower_components/materialize-css/css/materialize.min.css" media="screen,projection"/>
-	<link rel="stylesheet" href="styles/style.css" media="screen,projection"/>
+	<link rel="stylesheet" href="libraries/styles/style.css" media="screen,projection"/>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">PROFECONECTA</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
+	<div class="navbar-fixed">
+	  <nav class="green" role="navigation">
+	    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">PROFECONECTA</a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="#">Navbar Link</a></li>
+	      </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#"><span class="fa fa-fw fa-shopping-cart paddingRight25"></span> Econocompra</a></li>
-        <li><a href="#"><span class="fa fa-fw fa-commenting paddingRight25"></span> Aví$ame</a></li>
-        <li><a href="#"><span class="fa fa-fw fa-line-chart paddingRight25"></span> Hi$tórico</a></li>
-        <li><a href="#"><span class="fa fa-fw fa-handshake-o paddingRight25"></span> Conciliación</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-  <div class="section no-pad-bot">
+	      <ul id="nav-mobile" class="side-nav">
+	        <li><a href="#!/econocomprasListado"><span class="fa fa-fw fa-shopping-cart paddingRight25"></span> Econocompra</a></li>
+	        <li><a href="#!/avisameListado"><span class="fa fa-fw fa-commenting paddingRight25"></span> Aví$ame</a></li>
+	        <li><a href="#"><span class="fa fa-fw fa-line-chart paddingRight25"></span> Hi$tórico</a></li>
+	        <li><a href="#"><span class="fa fa-fw fa-handshake-o paddingRight25"></span> PROFECOncilia</a></li>
+	      </ul>
+	      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+	    </div>
+	  </nav>
+	</div>
+	<div>
     <div class="container">
-	    <div class="section">
-
-    	</div>
-    </div>
+			<div ng-view></div>
+  	</div>
   </div>
 
   <!--  Scripts-->
 	<script src="bower_components/jquery/jquery.min.js"></script>
   <script src="bower_components/materialize-css/js/materialize.min.js"></script>
-  <script>
-	(function($){
-	  $(function(){
 
-	    $('.button-collapse').sideNav();
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
 
-	  }); // end of document ready
-	})(jQuery); // end of jQuery name space
-	</script>
+  <script src="libraries/js/catalogos.js"></script>
+  <script src="libraries/js/app.js"></script>
+  <script src="libraries/js/materialize.js"></script>
 
-  </body>
+	<!-- Vistas -->
+  <script src="libraries/views/avisame/listado.js"></script>
+  <script src="libraries/views/avisame/formulario.js"></script>
+</body>
 </html>

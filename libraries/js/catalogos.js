@@ -22,15 +22,33 @@ var catalogo = [
 	{ id: 8, name: "Jamón", precio: 10 },
 	{ id: 9, name: "Queso", precio: 10 },
 	{ id: 10, name: "Pan", precio: 10 },
-	{ id: 11, name: "Televisión 50 pulgadas", precio: 10 },
-	{ id: 12, name: "Xbox One", precio: 10 },
-	{ id: 13, name: "Celular Galaxia 35", precio: 10 },
-	{ id: 14, name: "Computadora De Él", precio: 10 }
+	{ id: 101, name: "Televisión 50 pulgadas", precio: 10 },
+	{ id: 102, name: "Xbox One", precio: 10 },
+	{ id: 103, name: "Celular Galaxia 35", precio: 10 },
+	{ id: 104, name: "Computadora De Él", precio: 10 }
 ];
 
+//Simular precios
 var precios = [];
 for(var is in supermercados){
 	for(var ic in catalogo){
-		
+		while()
+		//para cada dia desde hace 3 meses, agregar +- rand(-20, 20) %
 	}
 }
+
+var precios = [
+	{
+		id: 0,
+		precios: [
+			{
+				fecha: '2016-01-01',
+				0: 11,
+				1: 12,
+				2: 13
+				3: 11,
+				4: 12.6
+			}
+		]
+	}
+];

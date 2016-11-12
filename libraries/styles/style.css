@@ -21,8 +21,12 @@
   -moz-font-feature-settings: 'liga';
   -moz-osx-font-smoothing: grayscale;
 }
-
 .padding10{ padding: 10px }
 .paddingRight25{ padding-right: 25px }
 .container { width: 100%; }
-.side-nav { width: 220px; }
+.side-nav {
+	width: 220px;
+	z-index: 10000;
+}
+
+#sidenav-overlay{ display: none; }
